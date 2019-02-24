@@ -1,0 +1,466 @@
+[
+  {
+    "id": "99598c51-5674-447a-a462-279c093d1f27",
+    "label": "Strobe Heads",
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "6",
+        "value": "20",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "5",
+        "value": "20",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "19",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "24",
+        "value": "30",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "animation",
+        "label": "Shutter",
+        "universe": "office",
+        "steps": [
+          {
+            "delay": "0",
+            "channels": {
+              "8": "255",
+              "17": "0"
+            }
+          },
+          {
+            "delay": "100",
+            "channels": {
+              "8": "255",
+              "17": "0"
+            }
+          },
+          {
+            "delay": "0",
+            "channels": {
+              "8": "0",
+              "17": "255"
+            }
+          },
+          {
+            "delay": "100",
+            "channels": {
+              "8": "0",
+              "17": "255"
+            }
+          }
+        ]
+      },
+      {
+        "type": "animation",
+        "label": "Pan",
+        "universe": "office",
+        "steps": [
+          {
+            "delay": "1000",
+            "channels": {
+              "1": "255",
+              "12": "0"
+            }
+          },
+          {
+            "delay": "1000",
+            "channels": {
+              "1": "0",
+              "12": "255"
+            }
+          }
+        ]
+      },
+      {
+        "type": "animation",
+        "label": "Tilt",
+        "universe": "office",
+        "steps": [
+          {
+            "delay": "500",
+            "channels": {
+              "3": "191",
+              "14": "64"
+            }
+          },
+          {
+            "delay": "500",
+            "channels": {
+              "3": "64",
+              "14": "191"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2547dea9-991a-45ae-be85-f674cce45d30",
+    "label": "Point Up",
+    "default": true,
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "1",
+        "value": "86",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "3",
+        "value": "127",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "5",
+        "value": "32",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "6",
+        "value": "13",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "8",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "14",
+        "value": "128",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "17",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "20",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "24",
+        "value": "26",
+        "universe": "office",
+        "transition": "0"
+      }
+    ]
+  },
+  {
+    "id": "b0a17e50-b83d-458a-804e-ecce07166c41",
+    "label": "Blue Rings",
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "1",
+        "value": 63,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "3",
+        "value": 222,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "5",
+        "value": 38,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "6",
+        "value": 49,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "8",
+        "value": 255,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "12",
+        "value": 18,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "14",
+        "value": 51,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "17",
+        "value": 255,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "20",
+        "value": 255,
+        "universe": "office"
+      },
+      {
+        "type": "static",
+        "channel": "24",
+        "value": 26,
+        "universe": "office"
+      }
+    ]
+  },
+  {
+    "id": "3f9b9223-c2a4-428f-92ab-f8ea0e42b6bf",
+    "label": "Blue 1",
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "1",
+        "value": "142",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "3",
+        "value": "68",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "5",
+        "value": "33",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "8",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "12",
+        "value": "26",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "14",
+        "value": "79",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "17",
+        "value": "10",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "20",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      }
+    ]
+  },
+  {
+    "id": "dda176ed-c585-4b61-8916-7a793828f5cc",
+    "label": "Blue 2",
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "1",
+        "value": "150",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "3",
+        "value": "26",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "5",
+        "value": "33",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "8",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "12",
+        "value": "19",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "14",
+        "value": "44",
+        "universe": "office",
+        "transition": "5000"
+      },
+      {
+        "type": "static",
+        "channel": "17",
+        "value": "10",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "20",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      }
+    ]
+  },
+  {
+    "id": "80448359-ac7e-431c-ba69-f70ffe802a95",
+    "label": "White Beams",
+    "type": "full",
+    "values": [
+      {
+        "type": "static",
+        "channel": "3",
+        "value": "20",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "14",
+        "value": "40",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "18",
+        "value": "170",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "19",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "20",
+        "value": "100",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "8",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "static",
+        "channel": "17",
+        "value": "255",
+        "universe": "office",
+        "transition": "0"
+      },
+      {
+        "type": "animation",
+        "label": "Pan",
+        "universe": "office",
+        "steps": [
+          {
+            "delay": "2000",
+            "channels": {
+              "1": "0",
+              "12": "255"
+            }
+          },
+          {
+            "delay": "2000",
+            "channels": {
+              "1": "255",
+              "12": "0"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fb69d586-698c-4ff0-bce8-db8c8f1cc046",
+    "label": "Weather Example",
+    "type": "full",
+    "values": [
+      {
+        "type": "script",
+        "code": "const https = require(\"https\")\n\n/**\n * === Weather Based Script Example ===\n * @author William Overton (william@overton-it-services.com)\n * \n * This example uses free apis to set the value of channel \n * one for a universe called \"office\" depending on the weather\n * at the location of the server (using the ip to get the location)\n * \n * These APIs are not offiliated in anyway with the dmx-web project\n * and we in no way guarantee they are reliable or safe\n * \n * for any questions please open an issue at: \n * https://github.com/node-dmx/dmx-web\n * \n */\nclass WeatherDmxSetter {\n    constructor() {\n        this.run();\n        \n        /**\n         * Run every 10 mins\n         */\n        setInterval(this.run.bind(this), 1000 * 60 * 10);\n    }\n    \n    run(){\n        this.makeRequest(\"https://extreme-ip-lookup.com/json/\", (resp) => {\n            const ipData = JSON.parse(resp);\n            this.makeRequest(`https://www.metaweather.com/api/location/search/?query=${ipData.city}`, (resp) => {\n                const locationData = JSON.parse(resp)[0];\n                this.makeRequest(`https://www.metaweather.com/api/location/${locationData.woeid}/`, (resp) => {\n                    const weatherData = JSON.parse(resp);\n                    const weatherType = weatherData.consolidated_weather[0].weather_state_name;\n                    const isBadWeather = [\"Clear\", \"Light Cloud\", \"Heavy Cloud\"].indexOf(weatherType) === -1;\n                    \n                    this.setDmxForWeather(isBadWeather);\n                });\n            });\n        });\n    }\n    \n    setDmxForWeather(isBadWeather){\n        if(isBadWeather){\n            console.log(\"Weather is bad!\")\n            dmx.set(\"office\", 1, 255);\n        }else {\n            console.log(\"Weather is fine.\")\n            dmx.set(\"office\", 1, 0);\n        }\n    }\n    \n    makeRequest(url, callback) {\n        https.get(url, (resp) => {\n            let data = '';\n            \n            // A chunk of data has been recieved.\n            resp.on('data', (chunk) => {\n                data += chunk;\n            });\n            \n            // The whole response has been received. Print out the result.\n            resp.on('end', () => {\n                callback(data);\n            });\n        }).on(\"error\", (error) => {\n            console.log(error);\n        });\n    }\n}\n\nnew WeatherDmxSetter();\n"
+      }
+    ]
+  }
+]

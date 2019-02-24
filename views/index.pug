@@ -1,0 +1,74 @@
+html
+  head
+
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+
+    title DMX WEB
+
+    //- Load vendor css
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+
+    
+    //- Load custom css
+    link(rel="stylesheet" href="/css/main.css")
+
+    //- Load vendor js
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js" integrity="sha256-rfN9xU0ELcvTsc3WUaKlvSVEfzLvFCyl+ID09aieASo=" crossorigin="anonymous")
+      
+    //- Load socket.io
+    script(src="/socket.io/socket.io.js")
+
+  body
+
+    //- Build navbar
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href="#") DMX WEB
+      
+      .btn-group.d-md-block.d-lg-none
+        button.btn.btn-danger.dmx-scene-trigger(scene_id="default-blackout") Blackout
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+
+      div.collapse.navbar-collapse#main-navbar
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="#control") Control
+          
+          if !!config.allowEditing
+            li.nav-item
+              a.nav-link(href="#edit") Editor
+          
+          li.nav-item
+            a.nav-link(href="#sliders") Simple Sliders
+
+        button.d-none.d-lg-block.btn.btn-danger.dmx-scene-trigger(scene_id="default-blackout")="Blackout"
+        
+    // Build content
+    .tab-content#main-content-tabs
+      .tab-pane#control
+        include includes/control.pug
+
+      - if(!!config.allowEditing)
+        .tab-pane#edit
+          include includes/editor.pug
+          
+      .tab-pane#sliders
+        include includes/sliders.pug
+
+  // Load custom JS
+  script(src="/js/navbar.js")
+  script(src="/js/socket.js")
+  script(src="/js/slider.js")
+  script(src="/js/control.js")
+  script(src="/js/editor/editor-static-renderer.js")
+  script(src="/js/editor/editor-animation-renderer.js")
+  script(src="/js/editor/editor-script-renderer.js")
+  script(src="/js/editor/editor.js")
+  script(src="/js/main.js")

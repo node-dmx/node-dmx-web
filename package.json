@@ -19,10 +19,13 @@
     "light control"
   ],
   "dependencies": {
-    "dmx": "^0.2.0",
     "commander": "^2.12.2",
+    "dmx": "^0.2.0",
     "express": "^4.16.2",
-    "socket.io": "^2.0.4"
+    "pug": "^2.0.3",
+    "socket.io": "^2.0.4",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

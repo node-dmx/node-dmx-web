@@ -1,0 +1,52 @@
+[
+  {
+    "id": "e244e345-3246-8cd0-8975-bd234a72712e",
+    "label": "MiniLED Spot",
+    "channels": [
+      "pan",
+      "pan-fine",
+      "tilt",
+      "tilt-fine",
+      "static-color",
+      "gobo-selector",
+      "strobe",
+      "dimmer",
+      "move-speed",
+      "program",
+      "program"
+    ],
+    "address": 1,
+    "universe": "office"
+  },
+  {
+    "id": "5ae890f-0126-92cd-dd03-ac22de4a7628",
+    "label": "MiniLED Moving Head",
+    "channels": [
+      "pan",
+      "pan-fine",
+      "tilt",
+      "tilt-fine",
+      "move-speed",
+      "dimmer-strobe-combo",
+      "red",
+      "green",
+      "blue",
+      "static-color",
+      "color-speed",
+      "program",
+      "gobo-selector"
+    ],
+    "address": 12,
+    "universe": "office"
+  },
+  {
+    "id": "cc624132-cc7b-4c4c-a506-21a9c2b8e5ba",
+    "label": "My Dimmer",
+    "universe": "office",
+    "address": 100,
+    "type": "generic",
+    "channels": [
+      "dimmer"
+    ]
+  }
+]
